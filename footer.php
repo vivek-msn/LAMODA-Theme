@@ -41,6 +41,7 @@
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     
+<?php wp_footer(  ) ?>
  </body>
 </html>
 

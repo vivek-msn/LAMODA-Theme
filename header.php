@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/etlinefont.css">
     <link href="css/style.css" type="text/css"  rel="stylesheet"/>
 
+    <?php wp_head(  ) ?>
 
    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -35,8 +36,7 @@
         <script src="js/respond.min.js"></script>
         <![endif]-->
     
-	<body  data-spy="scroll" data-target="#main-menu">
- 
+	<body  data-spy="scroll" data-target="#main-menu"> 
 
        
    <!--Start Navigation-->
