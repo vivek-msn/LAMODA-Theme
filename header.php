@@ -18,16 +18,12 @@
       
 
      <!--styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" href="css/etlinefont.css">
-    <link href="css/style.css" type="text/css"  rel="stylesheet"/>
-
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/magnific-popup.css" rel="stylesheet">
+    <link rel="<?php echo get_template_directory_uri(); ?>stylesheet" type="text/css" href="/assets/css/animate.css" />
+    <link rel="<?php echo get_template_directory_uri(); ?>stylesheet" href="/assets/css/etlinefont.css">
+    
     <?php wp_head(  ) ?>
 
    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
