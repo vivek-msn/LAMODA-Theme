@@ -1,6 +1,6 @@
 
 
-
+<?php get_header() ?>
       
         <!-- Start Slider  -->
         <section id="home" class="home">
@@ -1660,6 +1660,8 @@ viverra purus tristique.</p>
        </div> <!-- /.container-->
    </section>
    <!--End Contact-->
+
+   <?php get_footer() ?>
    
    
    
