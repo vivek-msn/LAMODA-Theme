@@ -55,27 +55,13 @@
                             <!--End Logo -->
 							<div class="clear-toggle"></div>
 							<div id="main-menu" class="collapse scroll navbar-right">
-								<ul class="nav">
-                                
-									<li class="active"> <a href="#home">Home</a> </li>
-									
-									<li> <a href="#about">About</a> </li>
-                                    
-                                    <li> <a href="#history">History</a> </li>
-                                    
-                                    <li> <a href="#works">Our Work</a> </li>
-                                    
-                                     <li> <a href="#team">Team</a> </li>
-                                   
-								    <li> <a href="#services">Services</a> </li>
-																		
-									<li> <a href="#blog">Blog</a></li>
-                                    
-                                    <li> <a href="#testimonials">Testimonials</a></li>
-                                     
-									<li> <a href="#contact">Contact</a> </li>
-										
-								</ul>
+								<div class="nav">
+                                <?php
+										wp_nav_menu( array(
+											'theme-location' => 'primary'
+										) );
+									?>
+								</div>
 							</div><!-- end main-menu -->
 						</div>
 					</div>
