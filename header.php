@@ -49,7 +49,7 @@
                             <!--Start Logo -->
 							<div class="logo-nav">
 								<a href="index.html">
-									<img src="images/logo.png" alt="Company logo" />
+									<?php the_custom_logo() ?>
 								</a>
 							</div>
                             <!--End Logo -->
