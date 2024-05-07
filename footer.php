@@ -10,14 +10,7 @@
                
                <!--start social icons-->
                <div class="col-md-6 col-sm-6 col-xs-6">
-                   <div class="social-icons">
-                       <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                       </ul>
-                    </div>
+                   <?php dynamic_sidebar('footer-2') ?>
                </div>
                <!--End social icons-->
            </div> <!-- /.row-->

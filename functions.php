@@ -34,6 +34,16 @@ function lamoda_theme_widgets() {
         'before_title' => '<h4 class="widget-title">',
         'after_title'   => '</h4>,'
     ) );
+
+    register_sidebar( array(
+        'name' => __('Lamoda Theme Social icon Footer', 'lamoda-theme'),
+        'id'    => 'footer-2',
+        'description' => __('Drag and Drop your widgets here', 'lamoda-theme'),
+        'before_widgets' => '<div id="%1$s"  class="widget %2$s">',
+        'after_widgets' => '</div>' ,
+        'before_title' => '<h4 class="widget-title">',
+        'after_title'   => '</h4>,'
+    ) );
 }
 
 add_action( 'widgets_init', 'lamoda_theme_widgets');
