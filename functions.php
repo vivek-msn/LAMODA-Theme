@@ -24,4 +24,17 @@ function lamod_theme_setup(){
 
 add_action('after_setup_theme', 'lamod_theme_setup' );
 
+function lamoda_theme_widgets() {
+    register_sidebar( array(
+        'name' => __('Lamoda Theme Footer copyright sidebar', 'lamoda-theme'),
+        'id'    => 'footer-1',
+        'description' => __('Drag and Drop your widgets here', 'lamoda-theme'),
+        'before_widgets' => '<div id="%1$s"  class="widget %2$s">',
+        'after_widgets' => '</div>' ,
+        'before_title' => '<h4 class="widget-title">',
+        'after_title'   => '</h4>,'
+    ) );
+}
+
+add_action( 'widgets_init', 'lamoda_theme_widgets');
 ?>

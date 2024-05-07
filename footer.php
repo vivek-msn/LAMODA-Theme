@@ -4,8 +4,7 @@
            <div class="row">
                <!--Start copyright-->
                <div class="col-md-6 col-sm-6 col-xs-6">
-                   <div class="copyright"><p>Copyright © 2016 All Rights reserved by: <a href="http://templatestock.co">Template Stock</a>
-                 </p></div>
+                   <?php dynamic_sidebar('footer-1') ?>
                </div>
                <!--End copyright-->
                
