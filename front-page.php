@@ -4,7 +4,7 @@
       
         <!-- Start Slider  -->
         <section id="home" class="home">
-             <?php echo do_shortcode('[smartslider3 slider="2"]');?>
+        <?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
         </section>
           <!-- End Slider  -->
 
@@ -18,7 +18,7 @@
               <div class="col-md-4">
                   <div class="features-icon-box">
                   
-                      <div class="features-icon">
+                      <div class="features-icon"> 
                       <i class="fa fa-leaf"></i>
                       </div>
                       
@@ -1397,7 +1397,17 @@ viverra purus tristique.</p>
                  <div class="title-box text-center">
                     <h2 class="title">Latest Blog</h2>
                  </div>
-                
+                <?php 
+                    $blog_args = array(
+                    'post_type' => 'post' ,
+                    'posts_per_page' => 3
+                );
+
+                $blog_posts = new WP_Query($blog_args);
+                while($blog_posts->have_posts()){
+                    $blog_posts->the_post();
+                ?>
+
                <!-- Start Blog item #1-->
                <div class="col-md-4">
                    <div class="blog-post">
@@ -1412,37 +1422,7 @@ viverra purus tristique.</p>
                        </div>
                    </div>
                </div>
-               
-               <!-- Start Blog item #2-->
-               <div class="col-md-4">
-                   <div class="blog-post">
-                         <div class="post-media">
-							 <img src="images/blog/blog2.jpg" alt="">
-                         </div>
-                       <div class="post-desc">
-                           <h4>consectetur adipisicing Inventore</h4>
-                            <h5>12 May, 2015 / 3 Comments</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
-                            <a href="blog.html" class="btn btn-gray-border">Read More</a>
-                       </div>
-                   </div>
-               </div>
-               
-               <!-- Start Blog item #3-->
-               <div class="col-md-4">
-                   <div class="blog-post">
-                         <div class="post-media">
-							 <img src="images/blog/blog3.jpg" alt="">
-                         </div>
-                       <div class="post-desc">
-                           <h4>consectetur adipisicing Inventore</h4>
-                             <h5>12 May, 2015 / 11 Comments</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
-                        <a href="blog.html" class="btn btn-gray-border">Read More</a>
-                       </div>
-                   </div>
-               </div>
-
+               <?php }?>               
            </div> <!--/.row-->
        </div> <!--/.container-->
    </section>
