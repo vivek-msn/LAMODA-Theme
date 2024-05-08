@@ -1420,9 +1420,9 @@ viverra purus tristique.</p>
                              </a>
                          </div>
                        <div class="post-desc">
-                           <h4>consectetur adipisicing Inventore</h4>
+                           <h4><?php the_title() ?></h4>
                            <h5>12 May, 2015 / 5 Comments</h5>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
+                           <p><?php the_excerpt() ?></p>
                             <a href="blog.html" class="btn btn-gray-border">Read More</a>
                        </div>
                    </div>
