@@ -1421,9 +1421,9 @@ viverra purus tristique.</p>
                          </div>
                        <div class="post-desc">
                            <h4><?php the_title() ?></h4>
-                           <h5>12 May, 2015 / 5 Comments</h5>
+                           <h5><?php the_date() ?> / <?php echo get_comments_number() ?></h5>
                            <p><?php the_excerpt() ?></p>
-                            <a href="blog.html" class="btn btn-gray-border">Read More</a>
+                            <a href="<?php the_permalink() ?>" class="btn btn-gray-border">Read More</a>
                        </div>
                    </div>
                </div>
