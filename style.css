@@ -661,6 +661,7 @@ section {
 	width: 100%;
 	position: fixed;
 	z-index: 99999;
+	background:#202020;
 }
 
 #main-menu {
@@ -668,7 +669,7 @@ section {
 	visibility:visible;
 }
 
-.menu-bg {
+#main-menu {
 	background:#202020;
 }
 

@@ -24,7 +24,7 @@
     <link rel="<?php echo get_template_directory_uri(); ?>stylesheet" type="text/css" href="/assets/css/animate.css" />
     <link rel="<?php echo get_template_directory_uri(); ?>stylesheet" href="/assets/css/etlinefont.css">
     
-    <?php wp_head(  ) ?>
+    <?php wp_head() ?>
 
    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
