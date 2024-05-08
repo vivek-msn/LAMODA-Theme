@@ -1397,6 +1397,8 @@ viverra purus tristique.</p>
                  <div class="title-box text-center">
                     <h2 class="title">Latest Blog</h2>
                  </div>
+
+            <!-- Loop start here to display the posts  -->
                 <?php 
                     $blog_args = array(
                     'post_type' => 'post' ,
@@ -1412,7 +1414,8 @@ viverra purus tristique.</p>
                <div class="col-md-4">
                    <div class="blog-post">
                          <div class="post-media">
-							 <img src="images/blog/blog1.jpg" alt="">
+                        <!-- To display the featured image  -->
+							 <?php the_post_thumbnail();?>
                          </div>
                        <div class="post-desc">
                            <h4>consectetur adipisicing Inventore</h4>
