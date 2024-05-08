@@ -1414,8 +1414,10 @@ viverra purus tristique.</p>
                <div class="col-md-4">
                    <div class="blog-post">
                          <div class="post-media">
+                            <a href="<?php the_permalink() ?>">
                         <!-- To display the featured image  -->
 							 <?php the_post_thumbnail();?>
+                             </a>
                          </div>
                        <div class="post-desc">
                            <h4>consectetur adipisicing Inventore</h4>
