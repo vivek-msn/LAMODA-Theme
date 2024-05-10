@@ -23,8 +23,8 @@
                       </div>
                       
                       <div class="features-info">
-                         <h4>Clean & Modern Design</h4>
-                         <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna aliqua.</p>
+                         <h4><?php the_field('home_about_title'); ?></h4>
+                         <p><?php the_field('home_about_des');?></p>
                       </div>
                   </div>
               </div>
