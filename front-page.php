@@ -110,9 +110,10 @@
   </section> 
   <!--End Features-->
 
- 
+ <?php if(get_field('$counter_img_bg')); ?>
+
   <!-- Start Facts-->
-  <section id="facts" class="section parallax">
+  <section id="facts" class="section parallax" style="background-image:url(<?php the_field('counter_img_bg');?>)">
     <div class="overlay"></div>
        <div class="container">
            <div class="row">
