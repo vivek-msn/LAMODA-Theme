@@ -19,27 +19,8 @@
                        <p>123 4567 890</p>
                        <p>123 lorem ipsum, 4th floor, lorem, ipsum </p>
                        <p>mail@demo.com </p>
-                    </div>
-                     
-                     <form method="post">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <input class="form-control" id="name" placeholder="Full Name" type="text">
-                            </div>
-                            <div class="col-md-4">
-                                <input class="form-control" id="email" placeholder="Your Email" type="email">
-                            </div>
-                            <div class="col-md-4">
-                                <input class="form-control" id="subject" placeholder="Subject" type="text">
-                            </div>
-                            <div class="col-md-12">
-                                <textarea class="form-control" id="message" rows="7" placeholder="Your Message"></textarea>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <button type="submit" class="btn btn-green">SEND MESSAGE</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>                     
+                     <?php echo do_shortcode('[contact-form-7 id="957a0ed" title="Contact form 1"]');?>
                </div>
               <!--End contact form-->
               
