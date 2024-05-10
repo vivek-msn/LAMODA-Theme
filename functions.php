@@ -58,4 +58,7 @@ function lamoda_theme_widgets() {
 }
 
 add_action( 'widgets_init', 'lamoda_theme_widgets');
+
+require get_template_directory().'/inc/portfolio.php';
+
 ?>

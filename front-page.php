@@ -1114,7 +1114,47 @@ viverra purus tristique.</p>
   </section> 
   <!--End Skills-->
 
- 
+    <!-- Start portfolio  -->
+    <section id="works" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="title-box text-center">
+                    <h2 class="title">Latest Portfolios</h2>
+                </div>
+
+                <?php 
+                    $query = new WP_Query(array(
+                        'post_type' => 'portfolio',
+                        'posts_per-page' => 1
+                    ));
+                    query_posts($query);
+                    while($query->have_posts()) : $query->the_post();
+                    endwhile;
+                ?>
+
+                <!-- Start Portfolio Items Here  -->
+                <div class="col-md-4">
+                   <div class="blog-post">
+                         <div class="post-media">
+                            <a href="<?php the_permalink() ?>">
+                        <!-- To display the featured image  -->
+							 <?php the_post_thumbnail();?>
+                             </a>
+                         </div>
+                       <div class="post-desc">
+                           <h4><?php the_title() ?></h4>
+                           <h5><?php the_date() ?> / <?php echo get_comments_number() ?></h5>
+                           <p><?php the_excerpt() ?></p>
+                            <a href="<?php the_permalink() ?>" class="btn btn-gray-border">Read More</a>
+                       </div>
+                   </div>
+               </div>
+               <?php wp_reset_query() ?>
+            </div>
+        </div>
+    </section>
+    <!-- End portfolio  -->
+
   <!--Start Services-->
    <section id="services" class="section">
         <div class="container">
